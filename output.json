@@ -1,0 +1,986 @@
+{
+   "id": "project-264141459-089b",
+   "version": "5.8.355",
+   "title": "Rourke_G1_lbb_4",
+   "description": "",
+   "metadata": {
+      "image": {}
+   },
+   "config": {
+      "language": "en-us",
+      "defaultPageWidth": "750",
+      "defaultPageHeight": "1000",
+      "userStylesheets": [],
+      "mobile": {
+         "landscapeDoublePage": false
+      },
+      "transition": "flip",
+      "doublepage": true,
+      "firstPageNumber": 1,
+      "usePageImageALT": false,
+      "print": false,
+      "share": false,
+      "shadow": true,
+      "slideshow": false,
+      "pdfUrl": "",
+      "widgetDataManager": {
+         "url": ""
+      },
+      "defaultPageSizeType": "default",
+      "convertImageMinSize": "1600",
+      "convertFormat": "image",
+      "theme": "audio_book",
+      "disablePageMoveGesture": false,
+      "disableZoomGesture": false,
+      "mobileOnly": false,
+      "disablingContentLoadingBar": false,
+      "reversePageTurnDirection": false,
+      "setDefaultFitWidth": false,
+      "publishType": "local",
+      "fonts": [
+         {
+            "group": "b",
+            "displayName": "jostbook",
+            "name": "jostbook",
+            "css": "_fonts.css",
+            "user": true,
+            "foldername": "jost.book"
+         },
+         {
+            "group": "b",
+            "displayName": "poppins",
+            "name": "poppinsR",
+            "css": "_fonts.css",
+            "user": true,
+            "foldername": "poppins"
+         },
+         {
+            "group": "b",
+            "displayName": "poppinsM",
+            "name": "poppinsM",
+            "css": "_fonts.css",
+            "user": true,
+            "foldername": "poppinsM"
+         }
+      ],
+      "useWebkitBrowser": false,
+      "logo": {
+         "alt": ""
+      },
+      "homepageUrl": "",
+      "homepageNewWindow": false,
+      "useCoverPage": true,
+      "bgImage": {},
+      "bgSound": {},
+      "tocPageNumber": "",
+      "tocOpenAll": false,
+      "progressPageControl": false,
+      "usePageHistory": false,
+      "brokenPageCorrection": false,
+      "thumbnail": {
+         "width": 600,
+         "height": 600,
+         "url": "{ASSETS_DIR}thumbnail.jpg"
+      },
+      "minZeroPageLabel": false,
+      "minLearnTimeEnable": false,
+      "minLearnTime": "",
+      "publishUniqueId": "publish-264141459-d322"
+   },
+   "pages": [
+      {
+         "id": "page-c0b3-be17",
+         "title": "이름 없음",
+         "label": "",
+         "width": 800,
+         "height": 800,
+         "background": {
+            "url": "{ASSETS_DIR}page-images/page-0001.jpg",
+            "width": 1600,
+            "height": 1600
+         },
+         "thumbnail": {
+            "url": "{ASSETS_DIR}page-images/thumbs/page-0001-thumb.jpg",
+            "width": 250,
+            "height": 250,
+            "src": ""
+         },
+         "config": {},
+         "properties": {},
+         "_doc": {},
+         "actions": [],
+         "contents": [
+            {
+               "id": "to-5bc6de",
+               "label": 1,
+               "viewType": "WidgetAudio",
+               "__extra__": {},
+               "left": -60,
+               "top": 0,
+               "width": 60,
+               "height": 60,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "actionOnActiveAudioChange": "stop",
+                  "label": "",
+                  "draggable": false,
+                  "asset": "as-23d109",
+                  "autoplay": true,
+                  "actionOnActiveMediaChange": "stop"
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "changeState"
+                     },
+                     "properties": {
+                        "widgetId": "to-5f44da",
+                        "widgetActionName": "start",
+                        "states": [
+                           {
+                              "target": "to-5bc6de",
+                              "value": "End"
+                           }
+                        ],
+                        "condition": "if"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Play",
+                     "label": "재생",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "End",
+                     "label": "완료",
+                     "readonly": true,
+                     "checkable": false
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "widget": true,
+               "name": "오디오",
+               "contents": [],
+               "children": []
+            },
+            {
+               "id": "to-5f44da",
+               "label": "",
+               "viewType": "WidgetTimer",
+               "__extra__": {},
+               "left": -60,
+               "top": 0,
+               "width": 60,
+               "height": 60,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "interval": 0,
+                  "count": 1,
+                  "label": "",
+                  "draggable": false,
+                  "intervalOffset": 0,
+                  "waitForInterval": 1500,
+                  "autostart": true,
+                  "repeat": false
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "widgetId": "to-5bc6de",
+                        "widgetActionName": "play"
+                     }
+                  },
+                  {
+                     "name": "GotoPage",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "selectPage": "nextPage"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Start",
+                     "label": "시작",
+                     "readonly": true
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "widget": true,
+               "name": "타이머",
+               "contents": [],
+               "children": []
+            }
+         ],
+         "subpages": []
+      },
+      {
+         "id": "page-fc26-df20",
+         "title": "이름 없음",
+         "label": "",
+         "width": 800,
+         "height": 800,
+         "background": {
+            "url": "{ASSETS_DIR}page-images/page-0002.jpg",
+            "width": 1600,
+            "height": 1600
+         },
+         "thumbnail": {
+            "url": "{ASSETS_DIR}page-images/thumbs/page-0002-thumb.jpg",
+            "width": 250,
+            "height": 250,
+            "src": ""
+         },
+         "config": {},
+         "properties": {},
+         "_doc": {},
+         "actions": [],
+         "contents": [],
+         "subpages": []
+      },
+      {
+         "id": "page-6ac2-09dd",
+         "title": "이름 없음",
+         "label": "",
+         "width": 800,
+         "height": 800,
+         "background": {
+            "url": "{ASSETS_DIR}page-images/page-0003.jpg",
+            "width": 1600,
+            "height": 1600
+         },
+         "thumbnail": {
+            "url": "{ASSETS_DIR}page-images/thumbs/page-0003-thumb.jpg",
+            "width": 250,
+            "height": 250,
+            "src": ""
+         },
+         "config": {},
+         "properties": {},
+         "_doc": {},
+         "actions": [],
+         "contents": [
+            {
+               "id": "to-9f8f53",
+               "label": 1,
+               "viewType": "WidgetAudioSyncPlayer",
+               "__extra__": {},
+               "left": 33,
+               "top": 0,
+               "width": 734,
+               "height": 800,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "theme": "dark",
+                  "alert": "none",
+                  "activeFontScale": 100,
+                  "activeFontBold": false,
+                  "wheelSpeed": 10,
+                  "activeControlbar": false,
+                  "label": "",
+                  "draggable": false,
+                  "fixed": false,
+                  "autoHeightFit": false,
+                  "controlbarBgColor": "",
+                  "controlbarIconColor": "",
+                  "widgetUserProperty": [],
+                  "activeFontColor": "#ff00ff",
+                  "actionOnActiveAudioChange": "stop",
+                  "actionOnActiveMediaChange": "stop"
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "changeState"
+                     },
+                     "properties": {
+                        "widgetId": "to-d55ef4",
+                        "widgetActionName": "start",
+                        "states": [
+                           {
+                              "target": "to-9f8f53",
+                              "value": "End"
+                           }
+                        ],
+                        "condition": "if"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Play",
+                     "label": "재생",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "End",
+                     "label": "완료",
+                     "readonly": true,
+                     "checkable": false
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "container": true,
+               "background": {
+                  "color": ""
+               },
+               "contents": [
+                  {
+                     "id": "to-de2f18",
+                     "label": "",
+                     "viewType": "WidgetAudioSyncPlayerControlBar",
+                     "__extra__": {},
+                     "left": 0,
+                     "top": 0,
+                     "width": null,
+                     "height": null,
+                     "rotate": 0,
+                     "properties": {
+                        "visible": true,
+                        "opacity": 100,
+                        "label": "",
+                        "draggable": false
+                     },
+                     "style": {},
+                     "actions": [],
+                     "animations": [],
+                     "responsives": [],
+                     "initState": null,
+                     "states": [],
+                     "fitWidth": false,
+                     "locked": false,
+                     "hidden": false,
+                     "children": []
+                  },
+                  {
+                     "id": "to-776397",
+                     "label": "",
+                     "viewType": "WidgetAudioSyncText",
+                     "__extra__": {},
+                     "left": 40,
+                     "top": 60,
+                     "width": 660,
+                     "height": 86,
+                     "rotate": 0,
+                     "properties": {
+                        "visible": true,
+                        "opacity": 100,
+                        "wordBreak": "normal",
+                        "label": "",
+                        "draggable": false,
+                        "widgetUserProperty": [],
+                        "asset": "as-c583fb"
+                     },
+                     "style": {
+                        "fontFamily": "poppinsM",
+                        "fontSize": "28px",
+                        "letterSpacing": "0.3px",
+                        "lineHeight": "1.5",
+                        "textShadow": "",
+                        "boxShadow": "",
+                        "color": "#000000"
+                     },
+                     "actions": [],
+                     "animations": [],
+                     "responsives": [],
+                     "initState": null,
+                     "states": [],
+                     "fitWidth": false,
+                     "locked": false,
+                     "hidden": false,
+                     "widget": true,
+                     "name": "오디오 싱크텍스트",
+                     "htmlText": "<p style=\"margin:0;\">By Colleen Hord |Illustrated by Helen Poole</p>",
+                     "contents": [],
+                     "boost": true,
+                     "children": []
+                  }
+               ],
+               "widget": true,
+               "name": "오디오 싱크플레이어",
+               "thumbnail": {
+                  "width": 70,
+                  "height": 100,
+                  "src": ""
+               },
+               "config": {},
+               "_doc": {},
+               "subpages": [],
+               "children": []
+            },
+            {
+               "id": "to-d55ef4",
+               "label": "",
+               "viewType": "WidgetTimer",
+               "__extra__": {},
+               "left": 800,
+               "top": 740,
+               "width": 60,
+               "height": 60,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "interval": 0,
+                  "count": 1,
+                  "label": "",
+                  "draggable": false,
+                  "intervalOffset": 0,
+                  "waitForInterval": 1500,
+                  "autostart": false,
+                  "repeat": false
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "widgetId": "to-9f8f53",
+                        "widgetActionName": "stop"
+                     }
+                  },
+                  {
+                     "name": "GotoPage",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "selectPage": "nextPage"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Start",
+                     "label": "시작",
+                     "readonly": true
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "widget": true,
+               "name": "타이머",
+               "contents": [],
+               "children": []
+            }
+         ],
+         "subpages": []
+      },
+      {
+         "id": "page-c975-7986",
+         "title": "이름 없음",
+         "label": "",
+         "width": 800,
+         "height": 800,
+         "background": {
+            "url": "{ASSETS_DIR}page-images/page-0004.jpg",
+            "width": 1600,
+            "height": 1600
+         },
+         "thumbnail": {
+            "url": "{ASSETS_DIR}page-images/thumbs/page-0004-thumb.jpg",
+            "width": 250,
+            "height": 250,
+            "src": ""
+         },
+         "config": {},
+         "properties": {},
+         "_doc": {},
+         "actions": [],
+         "contents": [
+            {
+               "id": "to-814eb2",
+               "label": 1,
+               "viewType": "WidgetAudioSyncPlayer",
+               "__extra__": {},
+               "left": 33,
+               "top": 0,
+               "width": 734,
+               "height": 800,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "theme": "dark",
+                  "alert": "none",
+                  "activeFontScale": 100,
+                  "activeFontBold": false,
+                  "wheelSpeed": 10,
+                  "activeControlbar": false,
+                  "label": "",
+                  "draggable": false,
+                  "fixed": false,
+                  "autoHeightFit": false,
+                  "controlbarBgColor": "",
+                  "controlbarIconColor": "",
+                  "widgetUserProperty": [],
+                  "activeFontColor": "#ff00ff",
+                  "actionOnActiveAudioChange": "stop",
+                  "actionOnActiveMediaChange": "stop"
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "changeState"
+                     },
+                     "properties": {
+                        "widgetId": "to-453acf",
+                        "widgetActionName": "start",
+                        "states": [
+                           {
+                              "target": "to-814eb2",
+                              "value": "End"
+                           }
+                        ],
+                        "condition": "if"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Play",
+                     "label": "재생",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true,
+                     "checkable": false
+                  },
+                  {
+                     "value": "End",
+                     "label": "완료",
+                     "readonly": true,
+                     "checkable": false
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "container": true,
+               "background": {
+                  "color": ""
+               },
+               "contents": [
+                  {
+                     "id": "to-d7b59a",
+                     "label": "",
+                     "viewType": "WidgetAudioSyncPlayerControlBar",
+                     "__extra__": {},
+                     "left": 0,
+                     "top": 0,
+                     "width": null,
+                     "height": null,
+                     "rotate": 0,
+                     "properties": {
+                        "visible": true,
+                        "opacity": 100,
+                        "label": "",
+                        "draggable": false
+                     },
+                     "style": {},
+                     "actions": [],
+                     "animations": [],
+                     "responsives": [],
+                     "initState": null,
+                     "states": [],
+                     "fitWidth": false,
+                     "locked": false,
+                     "hidden": false,
+                     "children": []
+                  },
+                  {
+                     "id": "to-d7fbf2",
+                     "label": "",
+                     "viewType": "WidgetAudioSyncText",
+                     "__extra__": {},
+                     "left": 40,
+                     "top": 60,
+                     "width": 660,
+                     "height": 86,
+                     "rotate": 0,
+                     "properties": {
+                        "visible": true,
+                        "opacity": 100,
+                        "wordBreak": "normal",
+                        "label": "",
+                        "draggable": false,
+                        "widgetUserProperty": [],
+                        "asset": "as-3dd527"
+                     },
+                     "style": {
+                        "fontFamily": "poppinsM",
+                        "fontSize": "28px",
+                        "letterSpacing": "0.3px",
+                        "lineHeight": "1.5",
+                        "textShadow": "",
+                        "boxShadow": "",
+                        "color": "#000000"
+                     },
+                     "actions": [],
+                     "animations": [],
+                     "responsives": [],
+                     "initState": null,
+                     "states": [],
+                     "fitWidth": false,
+                     "locked": false,
+                     "hidden": false,
+                     "widget": true,
+                     "name": "오디오 싱크텍스트",
+                     "htmlText": "<p style=\"margin:0;\">Sierra stared out the window as the rain</p><p style=\"margin:0;\">beat against the windowpane.</p>",
+                     "contents": [],
+                     "boost": true,
+                     "children": []
+                  },
+                  {
+                     "id": "to-f9b5d0",
+                     "label": "",
+                     "viewType": "WidgetAudioSyncText",
+                     "__extra__": {},
+                     "left": 40,
+                     "top": 100,
+                     "width": 660,
+                     "height": 86,
+                     "rotate": 0,
+                     "properties": {
+                        "visible": true,
+                        "opacity": 100,
+                        "wordBreak": "normal",
+                        "label": "",
+                        "draggable": false,
+                        "widgetUserProperty": [],
+                        "asset": "as-a97f60"
+                     },
+                     "style": {
+                        "fontFamily": "poppinsM",
+                        "fontSize": "28px",
+                        "letterSpacing": "0.3px",
+                        "lineHeight": "1.5",
+                        "textShadow": "",
+                        "boxShadow": "",
+                        "color": "#000000"
+                     },
+                     "actions": [],
+                     "animations": [],
+                     "responsives": [],
+                     "initState": null,
+                     "states": [],
+                     "fitWidth": false,
+                     "locked": false,
+                     "hidden": false,
+                     "widget": true,
+                     "name": "오디오 싱크텍스트",
+                     "htmlText": "<p style=\"margin:0;\">It was a</p><p style=\"margin:0;\">dreary day.</p>",
+                     "contents": [],
+                     "boost": true,
+                     "children": []
+                  }
+               ],
+               "widget": true,
+               "name": "오디오 싱크플레이어",
+               "thumbnail": {
+                  "width": 70,
+                  "height": 100,
+                  "src": ""
+               },
+               "config": {},
+               "_doc": {},
+               "subpages": [],
+               "children": []
+            },
+            {
+               "id": "to-453acf",
+               "label": "",
+               "viewType": "WidgetTimer",
+               "__extra__": {},
+               "left": 800,
+               "top": 740,
+               "width": 60,
+               "height": 60,
+               "rotate": 0,
+               "properties": {
+                  "visible": true,
+                  "opacity": 100,
+                  "interval": 0,
+                  "count": 1,
+                  "label": "",
+                  "draggable": false,
+                  "intervalOffset": 0,
+                  "waitForInterval": 1500,
+                  "autostart": false,
+                  "repeat": false
+               },
+               "style": {},
+               "actions": [
+                  {
+                     "name": "WidgetAction",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "widgetId": "to-814eb2",
+                        "widgetActionName": "stop"
+                     }
+                  },
+                  {
+                     "name": "GotoPage",
+                     "event": {
+                        "type": "timer"
+                     },
+                     "properties": {
+                        "selectPage": "nextPage"
+                     }
+                  }
+               ],
+               "animations": [],
+               "responsives": [],
+               "initState": null,
+               "states": [
+                  {
+                     "value": "Start",
+                     "label": "시작",
+                     "readonly": true
+                  },
+                  {
+                     "value": "Stop",
+                     "label": "정지",
+                     "readonly": true
+                  }
+               ],
+               "fitWidth": false,
+               "locked": false,
+               "hidden": false,
+               "widget": true,
+               "name": "타이머",
+               "contents": [],
+               "children": []
+            }
+         ],
+         "subpages": []
+      }
+   ],
+   "subpages": [],
+   "assets": {
+      "image": {
+         "folders": [
+            {
+               "id": "as-1aabec",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "gif": {
+         "folders": [
+            {
+               "id": "as-7b2209",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "audio": {
+         "folders": [
+            {
+               "id": "as-d8231a",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": [
+            {
+               "url": "{ASSETS_DIR}1.mp3",
+               "name": "1",
+               "ref": 0,
+               "fid": "as-d8231a",
+               "id": "as-23d109"
+            },
+            {
+               "url": "{ASSETS_DIR}2.mp3",
+               "name": "2",
+               "ref": 0,
+               "fid": "as-d8231a",
+               "id": "as-665a98"
+            },
+            {
+               "url": "{ASSETS_DIR}3.mp3",
+               "name": "3",
+               "ref": 0,
+               "fid": "as-d8231a",
+               "id": "as-336af3"
+            },
+            {
+               "url": "{ASSETS_DIR}4.mp3",
+               "name": "4",
+               "ref": 0,
+               "fid": "as-d8231a",
+               "id": "as-08854f"
+            }
+         ]
+      },
+      "movie": {
+         "folders": [
+            {
+               "id": "as-088b34",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "svg": {
+         "folders": [
+            {
+               "id": "as-07a3f9",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "flash": {
+         "folders": [
+            {
+               "id": "as-45ec0a",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "html": {
+         "folders": [
+            {
+               "id": "as-2f15ec",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "file": {
+         "folders": [
+            {
+               "id": "as-1f3227",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "folder": {
+         "folders": [
+            {
+               "id": "as-6c31ff",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      },
+      "data": {
+         "folders": [
+            {
+               "id": "as-64b97d",
+               "_default": true,
+               "readonly": true,
+               "lock": false,
+               "name": "기본폴더"
+            }
+         ],
+         "assets": []
+      }
+   }
+}

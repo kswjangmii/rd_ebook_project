@@ -1,3 +1,4 @@
+RD JSON 생성
 echo "# rd_ebook_project" >> README.md
 git init
 git add README.md
